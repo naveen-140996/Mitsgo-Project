@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-mulish;
+}
+
+.sticky-header{
+  position:sticky;
+  top:0;
+  background:#fff;
+  z-index:999;
+}
+
+.header-wrap {
+  background: #090f1d;
+}
+
+.header-wrap:hover{
+  background:#fff;
+  transition:all 0.4s ease;
+}
+@media(max-width:768px){
+  .header-wrap:hover{
+    background:none;
+    transition:all 0.4s ease;
+  }
+  .header-wrap:hover  .hamburger--btn span span,.header-wrap:hover .hamburger--btn span:after, .header-wrap:hover .hamburger--btn span:before {
+    background: #020a19;
+}
+}
+.header-wrap:hover .nav-elements{
+  color:#000;
+}
+
+.sticky-header .logo svg{
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7493%) hue-rotate(147deg) brightness(110%) contrast(96%);
+
+}
+
+.header-wrap:hover .logo svg{
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7493%) hue-rotate(147deg) brightness(110%) contrast(96%);
+}
+.lets-try-btn:hover{
+  background:#bb022a;
+  transition-duration:0.25s;
+}
+.banner_tick-animate-wrap__7tPRE .banner_tick-animate__Cw5VR {
+  transition: transform .7s ease-in-out;
+}
+.banner_accolades-wrap .banner_accolades-content{
+  transition:transform .3s ease-out;
+}
+.banner_accolades-wrap:hover .banner_accolades-content{
+  transform: translateY(-5px);
+}
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.why-hex__grid:hover .why-hex__wrap{
+  height:318px;
+}
+
+.whyHexnode_hexnodeAnimation .line-animation {
+  width: 100%;
+  animation: whyHexnode_borderAnimation 2s linear infinite reverse;
+}
+
+@keyframes whyHexnode_borderAnimation{
+  0% {
+    stroke-dashoffset: -3500;
+}
+100% {
+    stroke-dashoffset: 0;
+}
+}
+@media(min-width:768px){
+  .verticalTabSlider_content-layout-wrapper__WReDd .verticalTabSlider_image-slider-wrapper__Uzb4T{
+    width: 46%;
+    max-width: 600px;
+  }
+}
+
+.verticalTabSlider_content-layout-wrapper__WReDd .verticalTabSlider_accordion__Cf0Gs {
+    min-height: 375px;
+    border-radius:15px;
+}
+.verticalTabSlider_content-layout-wrapper__WReDd .verticalTabSlider_image-slider-wrapper__Uzb4T{
+  max-height: 565px;
+}
+@media(min-width:768px){
+  .verticalTabSlider_content-layout-wrapper__WReDd .verticalTabSlider_content-wrapper__NUsI_ {
+    width: 54%;
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 420px) {
+  .verticalTabSlider_content-layout-wrapper__WReDd .verticalTabSlider_accordion__Cf0Gs .verticalTabSlider_image-container--sm__RSLcl {
+      max-width: 340px;
+  }
+}
+
+
+.custom-arrow {
+  background: blue; /* Arrow background color */
+  color: #fff; /* Arrow text color */
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: absolute;
+  z-index: 1;
+}
+
+.custom-arrow:hover {
+  background: #ccc; /* Darker blue on hover */
+}
+
+.left-arrow {
+  left: -50px; /* Adjust position for the left arrow */
+}
+
+.right-arrow {
+  right: -50px; /* Adjust position for the right arrow */
+}
+
+.sticky-header .hamburger--btn span span, .sticky-header .hamburger--btn span:after, .sticky-header .hamburger--btn span:before {
+  background: #020a19;
+}
+.cusreviewslider_hide-scrollbar__lQqUC {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.testimonial-image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: transparent;
+}
+
+@media (max-width:1200px) { 
+  .why-hex__grid .why-hex__wrap {
+    height: unset; 
+    pointer-events: none; 
+  }
+}
+
+@media(max-width:400px){
+  .banner_tick-animate-wrap__7tPRE{
+    height:23px !important;
+  }
+  .banner_tick-animate-wrap__7tPRE span{
+    margin-left:10px !important;
+  }
+}
+
+@media(max-width:320px){
+  .mobile-media-height.active{
+    height:280px !important;
+  }
+}
+/* Hamburger Button Styles */
+.hamburger--btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger--btn .bar {
+  background-color: #333; /* Dark color for better visibility */
+  height: 3px;
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.hamburger--btn.open .bar {
+  transition: all 0.3s ease;
+}
+
+.hamburger--btn .bar:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  top: 0;
+  transition: all 0.3s ease;
+}
+
+.hamburger--btn .bar:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+
+.hamburger--btn.open .bar:before {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger--btn.open .bar:after {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Right-side Menu Slider Styles */
+.right-side-slider {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color:#fff;
+  color: #fff;
+  width: 100%; 
+  z-index: 100;
+  transform: translateX(100%);
+}
+
+.right-side-slider.translate-x-0 {
+  transform: translateX(0); 
+}
+
+.right-side-slider .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+.nav-open .nav-header  .hamburger--btn span:before {
+  transform: rotate(-45deg);
+  bottom: 50%;
+  margin-bottom: -2px;
+  background-color: #020a19;
+  transition: all .2s, transform .2s .3s, -webkit-transform .2s .3s;
+}
+
+.nav-open .nav-header  .hamburger--btn span:after {
+  background-color: #020a19;
+  transform: rotate(45deg);
+  top: 50%;
+  margin-top: -1px;
+  transition: all .2s, transform .2s .3s, -webkit-transform .2s .3s;
+}
+.nav-open .nav-header .hamburger--btn span span {
+  visibility: hidden;
+  transition: opacity .3s, visibility .3s;
+  opacity: 0;
+}
+@media(max-width:768px){
+  .right-side-slider{
+    width:50%;
+  }
+}
+@media(max-width:450px){
+  .right-side-slider{
+    width:100%;
+  }
+}
