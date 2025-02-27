@@ -1,0 +1,69 @@
+.container {
+    width: 900px;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  
+  .slick-slider {
+    position: relative;
+  }
+  
+  .slick-list {
+    overflow: visible; /* Allows next/prev slides to be partially visible */
+  }
+  
+  .slick-slide {
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    transform: scale(0.8); /* Shrinks inactive slides */
+    opacity: 0.5; /* Fades out inactive slides */
+    position: relative !important ;
+    right: 35px !important;
+    z-index: 1;
+  }
+  
+  .slick-current {
+    transform: scale(1); /* Enlarges active slide */
+    opacity: 1;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .slick-snext {
+    transform: translateX(20%) scale(0.9); /* Moves next slide slightly forward */
+    z-index: 1;
+    position: relative;
+    left: 20px;
+  }
+  
+  .slick-sprev {
+    transform: translateX(-20%) scale(0.9); /* Moves previous slide slightly forward */
+    z-index: 1;
+  }
+  
+  .prev, .next {
+    background: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .prev {
+    left: -50px;
+  }
+  
+  .next {
+    right: -50px;
+  }
+  
+  
+  .test {
+    display: block;
+    width: 100%;
+    height: 460px;
+    box-shadow: inset 0px 0px 0px 3px #000;
+  }

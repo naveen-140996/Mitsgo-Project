@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 
 @tailwind base;
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  @apply font-mulish;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .sticky-header{
@@ -21,33 +21,25 @@ body {
 }
 
 .header-wrap {
-  background: #090f1d;
+  background: #fff;
 }
 
-.header-wrap:hover{
-  background:#fff;
-  transition:all 0.4s ease;
-}
-@media(max-width:768px){
-  .header-wrap:hover{
-    background:none;
-    transition:all 0.4s ease;
-  }
-  .header-wrap:hover  .hamburger--btn span span,.header-wrap:hover .hamburger--btn span:after, .header-wrap:hover .hamburger--btn span:before {
-    background: #020a19;
-}
-}
-.header-wrap:hover .nav-elements{
-  color:#000;
+.signup-btn:hover img{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(198deg) brightness(101%) contrast(104%);
 }
 
-.sticky-header .logo svg{
-  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7493%) hue-rotate(147deg) brightness(110%) contrast(96%);
-
+.banner{
+  background: url('./assets/images/banner-image.png') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height:600px;
+  padding: 40px;
+  position: relative;
 }
-
-.header-wrap:hover .logo svg{
-  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7493%) hue-rotate(147deg) brightness(110%) contrast(96%);
+.card{
+  box-shadow: 0px 0px 10px #0000001A;
+  background: #fff;
+  padding: 40px;
 }
 .lets-try-btn:hover{
   background:#bb022a;
@@ -288,4 +280,142 @@ body {
   .right-side-slider{
     width:100%;
   }
+}
+
+.slide-card{
+  box-shadow: 0px 0px 10px #ccc;
+}
+.know-btn img{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(198deg) brightness(101%) contrast(104%);
+}
+
+.container.transformation{
+  width: 900px;
+  margin: 0 auto;
+  max-width: 80%;
+  overflow: hidden;
+}
+
+.transformation .slick-slider {
+  position: relative;
+}
+
+.transformation .slick-list {
+  overflow: visible; /* Allows next/prev slides to be partially visible */
+}
+
+.transformation .slick-slide {
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  transform: scale(0.8); /* Shrinks inactive slides */
+  opacity: 0.5; /* Fades out inactive slides */
+  z-index: 1;
+}
+
+.transformation .slick-current {
+  transform: scale(1); /* Enlarges active slide */
+  opacity: 1;
+  position: relative;
+  z-index: 10;
+}
+
+.transformation .slick-snext {
+  transform: translateX(20%) scale(0.9); /* Moves next slide slightly forward */
+  z-index: 1;
+  position: relative;
+  left: 20px;
+}
+
+.transformation .slick-sprev {
+  transform: translateX(-20%) scale(0.9); /* Moves previous slide slightly forward */
+  z-index: 1;
+}
+
+.prev, .next {
+  background: #000;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.prev {
+  left: -50px;
+}
+
+.next {
+  right: -50px;
+}
+
+
+.transformation .test {
+  display: block;
+  width: 100%;
+  height: 460px;
+  box-shadow: inset 0px 0px 0px 3px #000;
+}
+
+.pricing-bg{
+  background: url('./assets/images/pricing-bg.png') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding: 40px;
+}
+.accordian-content{
+  transition: all 0.5s ease-in-out;
+}
+.contact-bg{
+  background: url('./assets/images/contact-us.png') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding: 40px;
+}
+.service-container{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.service-container .slick-dots{
+  bottom: 10% !important;
+  left: 40px !important;
+}
+
+.service-container .slick-dots li{
+  margin: 0px 20px !important;
+}
+
+.service-container .slick-active .service-dot{
+  background: #136bd0;
+}
+.card-box{
+  box-shadow: 0px 0px 10px #d7d7d7;
+}
+.professional .slick-dots{
+  bottom: -7% !important;
+  left: 40px !important;
+}
+.professional .slick-dots li{
+  margin: 0px 20px !important;
+}
+.transformation .slick-active .service-dot{
+  background: #136bd0;
+}
+.transformation-bg{
+  background: url('./assets/images/transformationbg.png') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding: 40px;
+}
+.blog-bg {
+  background: url('./assets/images/blog-bg.png') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding: 40px;
 }

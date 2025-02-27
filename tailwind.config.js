@@ -8,8 +8,8 @@ export default {
         secondary:"#9fe871",
        },
        fontFamily: {
-          mulish: ['"Mulish"', "sans-serif"],
-        },
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
       },
     },
     plugins: [],

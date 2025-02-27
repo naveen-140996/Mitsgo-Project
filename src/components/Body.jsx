@@ -1,21 +1,22 @@
+import AppStore from "./AppStore"
 import HeroBanner from "./HeroBanner"
-import MultiPlatform from "./MultiPlatform"
-import PartnerSection from "./PartnerSection"
-import PowerFullSection from "./PowerFullSection"
-import StartSecureEndpoint from "./StartSecureEndpoint"
+import Service from "./Service"
 import Testimonial from "./Testimonial"
-import WhyHexnode from "./WhyHexnode"
-
+import Transformation from "./Transformation"
+import WhyChooseUs from "./WhyChooseUs"
+import Pricing from "./Pricing"
+import Rediscover from "./Rediscover"
 const Body = () => {
   return (
     <div>
         <HeroBanner />
-        <PartnerSection />
-        <WhyHexnode />
-        <PowerFullSection />
-        <MultiPlatform />
         <Testimonial />
-        <StartSecureEndpoint />
+        <WhyChooseUs />
+        <AppStore />
+        <Service />
+        <Transformation />
+        <Pricing />
+        <Rediscover />
     </div>
   )
 }
